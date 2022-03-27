@@ -1,0 +1,29 @@
+.generation-details-section .region-pokemons-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.region-pokemons-section {
+  padding: 0 10%;
+}
+
+.region-pokemons-section h3 {
+  width: 100%;
+}
+
+.region-pokemons-section .pokemon-div {
+  box-shadow: 0 0 4px black;
+  border-radius: 8px;
+  margin: 10px;
+  width: 15%;
+}
+
+.region-pokemons-section .pokemon-div img {
+  width: 100%;
+}
+
+.region-pokemons-section .pokemon-div p {
+  word-wrap: break-word;
+  margin: 8px 0;
+}
