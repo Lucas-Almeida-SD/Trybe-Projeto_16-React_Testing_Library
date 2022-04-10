@@ -1,6 +1,6 @@
 # Projeto React Testing Library
 
-[Link](https://lucas-almeida-sd.github.io/Trybe-Projeto_16-React_Testing_Library/) para a página do projeto.
+[Link](https://lucas-almeida-sd.github.io/Trybe-Projeto_16-React_Testing_Library) para a página do projeto.
 
 Esse projeto foi realizado para exercitar o que foi aprendido no Bloco 14 do Módulo de Front End do curso da [Trybe](https://www.betrybe.com/), no qual foi sobre `Testes em React`. Neste projeto, fui capaz de:
 

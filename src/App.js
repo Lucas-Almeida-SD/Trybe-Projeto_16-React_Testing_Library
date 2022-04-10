@@ -77,7 +77,7 @@ class App extends Component {
       <Switch>
         <Route
           exact
-          path="/Trybe-Projeto_16-React_Testing_Library/"
+          path="/Trybe-Projeto_16-React_Testing_Library"
           render={ ({ match }) => this.renderPokedex(match) }
         />
         <Route
@@ -104,7 +104,7 @@ class App extends Component {
       <div className="App">
         <h1>Pokédex</h1>
         <nav>
-          <Link className="link" to="/Trybe-Projeto_16-React_Testing_Library/">{`Home`}</Link>
+          <Link className="link" to="/Trybe-Projeto_16-React_Testing_Library">{`Home`}</Link>
           <Link className="link" to="/Trybe-Projeto_16-React_Testing_Library/about">{`About`}</Link>
           <Link className="link" to="/Trybe-Projeto_16-React_Testing_Library/favorites">{`Favorite Pokémons`}</Link>
           <Link className="link" to="/Trybe-Projeto_16-React_Testing_Library/locations">{ `Locations` }</Link>
