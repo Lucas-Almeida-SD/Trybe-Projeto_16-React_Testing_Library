@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route, Link, Redirect } from 'react-router-dom';
 
 import {
   About,
@@ -77,7 +77,7 @@ class App extends Component {
       <Switch>
         <Route
           exact
-          path="/Trybe-Projeto_16-React_Testing_Library/"
+          path="/Trybe-Projeto_16-React_Testing_Library"
           render={ ({ match }) => this.renderPokedex(match) }
         />
         <Route
@@ -90,11 +90,25 @@ class App extends Component {
           path="/Trybe-Projeto_16-React_Testing_Library/favorites"
           render={ () => <FavoritePokemons pokemons={ favoritePokemons } /> }
         />
-        <Route exact path="/Trybe-Projeto_16-React_Testing_Library/about" component={ About } />
-        <Route exact path="/Trybe-Projeto_16-React_Testing_Library/locations" component={ Locations } />
-        <Route exact path="/Trybe-Projeto_16-React_Testing_Library/generations" component={ Generations } />
-        <Route exact path="/Trybe-Projeto_16-React_Testing_Library/generation/:id" render={(props) => 
-          <GenerationDetails {...props} /> }
+        <Route
+          exact
+          path="/Trybe-Projeto_16-React_Testing_Library/about"
+          component={ About }
+        />
+        <Route
+          exact
+          path="/Trybe-Projeto_16-React_Testing_Library/locations"
+          component={ Locations }
+        />
+        <Route
+          exact
+          path="/Trybe-Projeto_16-React_Testing_Library/generations"
+          component={ Generations }
+        />
+        <Route
+          exact
+          path="/Trybe-Projeto_16-React_Testing_Library/generation/:id"
+          render={(props) => <GenerationDetails {...props} /> }
         />
         <Route path="*" component={ NotFound } />
       </Switch>
@@ -106,11 +120,36 @@ class App extends Component {
       <div className="App">
         <h1>Pokédex</h1>
         <nav>
-          <Link className="link" to="/Trybe-Projeto_16-React_Testing_Library/">{`Home`}</Link>
-          <Link className="link" to="/Trybe-Projeto_16-React_Testing_Library/about">{`About`}</Link>
-          <Link className="link" to="/Trybe-Projeto_16-React_Testing_Library/favorites">{`Favorite Pokémons`}</Link>
-          <Link className="link" to="/Trybe-Projeto_16-React_Testing_Library/locations">{ `Locations` }</Link>
-          <Link className="link" to="/Trybe-Projeto_16-React_Testing_Library/generations">{ `Generations` }</Link>
+          <Link
+            className="link"
+            to="/Trybe-Projeto_16-React_Testing_Library"
+          >
+            {`Home`}
+          </Link>
+          <Link
+            className="link"
+            to="/Trybe-Projeto_16-React_Testing_Library/about"
+          >
+            {`About`}
+          </Link>
+          <Link
+            className="link"
+            to="/Trybe-Projeto_16-React_Testing_Library/favorites"
+          >
+            {`Favorite Pokémons`}
+          </Link>
+          <Link
+            className="link"
+            to="/Trybe-Projeto_16-React_Testing_Library/locations"
+          >
+            { `Locations` }
+          </Link>
+          <Link
+            className="link"
+            to="/Trybe-Projeto_16-React_Testing_Library/generations"
+          >
+            { `Generations` }
+          </Link>
         </nav>
         {this.renderRoutes()}
       </div>

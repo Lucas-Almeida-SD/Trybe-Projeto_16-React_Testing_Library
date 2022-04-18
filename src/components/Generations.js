@@ -26,7 +26,10 @@ class Generations extends React.Component {
             {generations.map((e, index) => {
             const generationName = e.name.replace('-', ' ').toUpperCase();
             return (
-              <Link to={`/Trybe-Projeto_16-React_Testing_Library/generation/${index + 1}`} key={e.name}>
+              <Link 
+                to={`/Trybe-Projeto_16-React_Testing_Library/generation/${index + 1}`}
+                key={e.name}
+              >
                 <li>{generationName}</li>
               </Link>
             );
